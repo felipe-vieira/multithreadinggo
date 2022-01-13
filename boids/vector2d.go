@@ -45,5 +45,5 @@ func (v1 Vector2D) limit(lower, upper float64) Vector2D {
 }
 
 func (v1 Vector2D) Distance(v2 Vector2D) float64 {
-	return math.Sqrt(math.Pow(v1.x-v2.x, 2) + math.Pow(v1.x-v2.x, 2))
+	return math.Sqrt(math.Pow(v1.x-v2.x, 2) + math.Pow(v1.y-v2.y, 2))
 }
