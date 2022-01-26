@@ -31,6 +31,7 @@ func fileSearch(root string, filename string) {
 			go fileSearch(filepath.Join(root, file.Name()), filename)
 		}
 	}
+
 	waitGroup.Done()
 }
 
