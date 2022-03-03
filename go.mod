@@ -1,4 +1,4 @@
-module gitmultithreadinggo
+module github.com/felipe-vieira/multithreadinggo
 
 go 1.17
 
