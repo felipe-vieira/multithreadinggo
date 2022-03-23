@@ -4,7 +4,8 @@ import (
 	"log"
 	"sync"
 
-	. "github.com/felipe-vieira/multithreadinggo/deadlockstrain/deadlock"
+	. "github.com/felipe-vieira/multithreadinggo/deadlockstrain/hierarchy"
+
 	. "github.com/felipe-vieira/multithreadinggo/deadlockstrain/domain"
 	"github.com/hajimehoshi/ebiten/v2"
 )
