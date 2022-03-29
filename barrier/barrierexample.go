@@ -2,7 +2,7 @@ package main
 
 import "time"
 
-func robotsAndBariers() {
+func robotsAndBarriers() {
 	barrier := NewBarrier(4)
 	go waitOnBarrier("red", 4, barrier)
 	go waitOnBarrier("blue", 10, barrier)
