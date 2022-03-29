@@ -1,10 +1,8 @@
 package main
 
-import (
-	"time"
-)
+import "time"
 
-func main() {
+func robotsAndBariers() {
 	barrier := NewBarrier(4)
 	go waitOnBarrier("red", 4, barrier)
 	go waitOnBarrier("blue", 10, barrier)
