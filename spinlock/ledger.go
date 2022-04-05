@@ -17,14 +17,13 @@ const (
 )
 
 func main() {
-	println("Total accounts:", totalAccounts, " total threads:", threads, "using Mutex")
+	println("Total accounts:", totalAccounts, " total threads:", threads, "using spinlocks")
 	var ledger [totalAccounts]int32
 	var locks [totalAccounts]sync.Locker
 	var totalTransactions int64
 	for i := 0; i < totalAccounts; i++ {
 		ledger[i] = initialMoney
-		//locks[i] = NewSpinLock()
-		locks[i] = &sync.Mutex{}
+		locks[i] = NewSpinLock()
 	}
 
 	for i := 0; i <= threads; i++ {
